@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //guarda o que for escrito na var
+        var nome = prompt('Escreva seu nome: ')
+        //escreve, através do js no body do site
+        document.writeln(`Olá, ${nome}. Seu nome tem ${nome.length}`)
+        document.writeln(`Em maiusculo ele é ${nome.toUpperCase()}`)
+        document.writeln(`E em minúsculo ele é ${nome.toLowerCase()}`)
+        //adiciona a info. da var na string
+        alert(`Bem-Vindo ${nome}!`)
+
+        var salario = prompt('Digite seu salário: ')
+        //Muda cifra do dinheiro com n.tolocale(...)
+        alert(`Seu salário em real é ${salario.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}`)
+        alert(`E em dolár é ${salario.toLocaleString('pt-BR', {style:'currency', currency: 'USD'})} `)
+
+        
+    </script>
+</body>
+</html>
