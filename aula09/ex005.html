@@ -15,12 +15,19 @@
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado!</p>
-    <div id="msg">Clique em mim</div>
+    <p id = "msg1">Olá Mundo</p>
+    <div id ="msg">Clique em mim</div>
     <script>
+        //seleciona a div e modifica ela com JS
         var a = document.querySelector('div#msg')
+        //seleciona paragrafo e modifica ele com JS
         var p = document.querySelector('p')
+        //caso tenha mais de uma paragrafo. Adiciona "#" para id e "." para nome
+        //continue sempre identificando as divs, p e h1 no código para consegui seleciona-las e fazer mod.
+        var p1 = document.querySelector('p#msg1')
         a.style.background = 'purple'
         p.style.color = 'green'
+        p1.style.background = 'red'
 
 
     </script>
