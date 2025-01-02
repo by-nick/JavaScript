@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <div id = 'botao'>Interaja</div>
+    <style>
+    div#botao{
+        background: rgb(7, 143, 7);
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        var b = document.querySelector('div#botao')
+        b.addEventListener('click', clicar)
+        b.addEventListener('mouseenter', entrar)
+        b.addEventListener('mouseout', saiu)
+        function clicar(){
+            b.innerText = 'Clicou!'
+            b.style.background = 'red'
+        }
+        function entrar(){
+            
+            b.innerText = 'Entrou!'
+            b.style.background = 'blue'
+        }
+        function saiu(){
+            b.innerText = 'Saiu!'
+            b.style.background = 'purple'
+        }
+    </script>
+    
+</body>
+</html>
