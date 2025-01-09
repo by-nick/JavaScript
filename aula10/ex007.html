@@ -19,14 +19,19 @@
     <div id = 'res'>Resultado</div>
 
     <script>
+        //inputs fazem espaços para escrito dependendo da categ. o tipo "button" faz um botão.
         function somar() {
-
+            //pega os valores das caixas de escrita
             var tn1 = document.querySelector('input#txtn1')
             var tn2 = document.querySelector('input#txtn2')
+            //soma os valores
             var res = document.querySelector('div#res')
+            //transformando em número invés de string
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
+            //soma os valores sem concatenar
             var s = n1 + n2
+            //escreve o valor no body
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual á ${s}`
         }
     </script>
