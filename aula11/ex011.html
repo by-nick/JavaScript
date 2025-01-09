@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDENTIFICADOR</title>
+</head>
+<body>
+    <h1>Identificador</h1>
+    Digite em qual país você reside <input type="search" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="ver()">
+    <div id = "res">RESULTADO</div>
+    <script>
+
+        //conecta o html no js
+        var p = document.querySelector('input#pais')
+        var res = document.querySelector('div#res')
+        
+        //condiçao composta
+        function ver(){
+            //p que era para transformar em número, coloca-se entro da condição do if, com === o valor se torna absoluto
+            if (p.value === 'Brasil') {
+                res.innerHTML = 'Você é Brasileiro'
+            }else{
+                res.innerHTML = 'Você é Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
